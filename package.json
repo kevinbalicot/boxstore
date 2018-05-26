@@ -1,6 +1,6 @@
 {
   "name": "boxstore",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "Box to store everythings everywhere!",
   "main": "index.js",
   "scripts": {

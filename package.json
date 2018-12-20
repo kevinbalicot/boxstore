@@ -1,11 +1,11 @@
 {
   "name": "boxstore",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Box to store everythings everywhere!",
   "main": "index.js",
   "scripts": {
     "test": "mocha",
-    "prepublish": "mocha"
+    "prepare": "mocha"
   },
   "keywords": [
     "box",
@@ -16,23 +16,7 @@
   ],
   "author": "Kevin Balicot <kevinbalicot@gmail.com>",
   "license": "MIT",
-  "browserify": {
-    "transform": [
-      [
-        "babelify",
-        {
-          "presets": [
-            "env"
-          ]
-        }
-      ]
-    ]
-  },
   "devDependencies": {
-    "babel-core": "^6.26.0",
-    "babel-preset-env": "^1.6.1",
-    "babelify": "^8.0.0",
-    "browserify": "^16.1.1",
     "mocha": "^5.0.0"
   }
 }

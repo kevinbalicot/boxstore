@@ -30,7 +30,7 @@ class Boxstore {
     /**
      * Add item into box
      * @param {string} name
-     * @param {mixed} value
+     * @param {*} value
      */
     add(name, value) {
         if (this.immutable && !!this._items[name]) {
@@ -43,10 +43,11 @@ class Boxstore {
     /**
      * Get item from box
      * @param {string} name
+     * @param {*} [def=null] default value
      *
-     * @return {object}
+     * @return {*|null}
      */
-    get(name) {
+    get(name, def = null) {
         const levels = name.split('.');
 
         let last = this._items;
@@ -55,7 +56,7 @@ class Boxstore {
                 break;
             }
 
-            last = last[levels[i]] || null;
+            last = last[levels[i]] ?? def;
         }
 
         return last;
@@ -66,7 +67,7 @@ class Boxstore {
      * @param {string} name
      * @param {object} [tree=null]
      *
-     * @return {mixed}
+     * @return {*}
      */
     search(name, tree = null) {
         tree = null !== tree ? tree : this._items;
@@ -123,5 +124,8 @@ class Boxstore {
     }
 }
 
-
-module.exports = new Boxstore();
+if (typeof window != 'undefined' && window) {
+    window.boxstore = new Boxstore();
+} else if (typeof module !== 'undefined' && module.exports) {
+    module.exports = new Boxstore();
+}

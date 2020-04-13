@@ -56,7 +56,7 @@ class Boxstore {
                 break;
             }
 
-            last = last[levels[i]] ?? def;
+            last = last[levels[i]] !== undefined ? last[levels[i]] : def;
         }
 
         return last;

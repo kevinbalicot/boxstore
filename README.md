@@ -7,7 +7,7 @@ Tests : [![Dev CI](https://github.com/kevinbalicot/boxstore/actions/workflows/de
 ## Installation
 
 ```
-$ npm install --save boxstore
+$ npm install --save boxstore 
 ```
 
 ## Usage

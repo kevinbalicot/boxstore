@@ -1,6 +1,6 @@
 # Boxstore
 
-Box to store everythings everywhere!
+Box to store every thing everywhere!
 
 Tests : [![Dev CI](https://github.com/kevinbalicot/boxstore/actions/workflows/dev.yml/badge.svg)](https://github.com/kevinbalicot/boxstore/actions/workflows/dev.yml)
 

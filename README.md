@@ -2,7 +2,7 @@
 
 Box to store everythings everywhere!
 
-Tests : [![Build Status](https://travis-ci.org/kevinbalicot/boxstore.svg?branch=master)](https://travis-ci.org/kevinbalicot/boxstore)
+Tests : [![Dev CI](https://github.com/kevinbalicot/boxstore/actions/workflows/dev.yml/badge.svg)](https://github.com/kevinbalicot/boxstore/actions/workflows/dev.yml)
 
 ## Installation
 

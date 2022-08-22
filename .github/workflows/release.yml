@@ -27,5 +27,5 @@ jobs:
               uses: actions/setup-node@v3
               with:
                   node-version: 16
-            - run: npm install semantic-release @semantic-release/changelog @semantic-release/commit-analyzer @semantic-release/exec @semantic-release/git @semantic-release/npm @semantic-release/release-notes-generator
-            - run: npm run semantic-release --ci
+            - run: npm install -g semantic-release @semantic-release/changelog @semantic-release/commit-analyzer @semantic-release/exec @semantic-release/git @semantic-release/npm @semantic-release/release-notes-generator
+            - run: semantic-release --ci

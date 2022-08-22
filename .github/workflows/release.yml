@@ -29,3 +29,5 @@ jobs:
                   node-version: 16
             - run: npm install -g semantic-release @semantic-release/changelog @semantic-release/commit-analyzer @semantic-release/exec @semantic-release/git @semantic-release/npm @semantic-release/release-notes-generator
             - run: semantic-release --ci
+              env:
+                  NPM_TOKEN: ${{secrets.NPM_TOKEN}}
